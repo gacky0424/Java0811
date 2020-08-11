@@ -38,6 +38,8 @@ public class ATM {
             case 9 : //9.離開
                 return;                
         }
+        //System.out.println("按下Enter 鍵繼續....");
+        //new Scanner(System.in)
         run(account);
     }
     
