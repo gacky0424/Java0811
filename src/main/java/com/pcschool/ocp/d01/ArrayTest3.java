@@ -17,7 +17,7 @@ public class ArrayTest3 {
         System.out.printf("平均: %.2f cm\n",avg);
         //取最大,最小值
         double Max=0;// or Integer.MAX_VALUE;
-        double Min=200;// or Integer.MIN_VALUE;
+        double Min=1000;// or Integer.MIN_VALUE;
         for(int i=0,len=h.length;i<len;i++){
             if(h[i]>Max){
                 Max = h[i];
