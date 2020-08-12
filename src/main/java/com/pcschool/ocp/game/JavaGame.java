@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class JavaGame {
     public static void main(String[] args) {
-        englishGameLoop();
+        //englishGameLoop();
+    
     }
-    public static void numberGameLoop() {
+    /*public static void numberGameLoop() {
         English english = new English();
         while (true) {
             Scanner sc = new Scanner(System.in);
@@ -21,8 +22,8 @@ public class JavaGame {
                 //continue;
             }
         }
-    }
-    public static void numberGameLoop() {
+    }*/
+    /*public static void numberGameLoop() {
         Number number = new Number();
         while (true) {
             Scanner sc = new Scanner(System.in);
@@ -38,6 +39,6 @@ public class JavaGame {
             }
         }
         
-    }
+    }*/
 
 }
