@@ -3,11 +3,8 @@ package com.pcschool.ocp.game;
 import java.util.Scanner;
 
 public class GameService {
-    public static void main(String[] args) {
-        //englishGameLoop();
-        menu();
-    }
-    public static void menu() {
+   
+    public static void start() {
         while (true) {            
             System.out.println("Java Game");
             System.out.println("---------------");
