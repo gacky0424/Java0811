@@ -1,5 +1,5 @@
 
-package com.pcschool.ocb.game;
+package com.pcschool.ocp.game;
 
 import java.util.Random;
 

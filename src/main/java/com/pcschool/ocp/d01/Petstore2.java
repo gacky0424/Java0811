@@ -1,5 +1,5 @@
 
-package com.pcschool.ocb.d01;
+package com.pcschool.ocp.d01;
 
 public class Petstore2 {
     public static void main(String[] args) {

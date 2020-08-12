@@ -1,4 +1,4 @@
-package com.pcschool.ocb.d01;
+package com.pcschool.ocp.d01;
 
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
