@@ -52,7 +52,7 @@ public class JavaGame {
         while (true) {
             Scanner sc = new Scanner(System.in);
             System.out.printf("請輸入英文字: ");
-            int userAns = sc.next().toUpperCase().charAt(0);
+            int userAns = sc.next().toUpperCase().charAt(0);//技巧,小寫英文可通用
             int result = english.check(userAns);
             if (result == 0) {
                 System.out.println("恭喜答對了");
