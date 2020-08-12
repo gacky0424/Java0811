@@ -1,7 +1,7 @@
 
 package com.pcschool.ocp.d01;
 
-
+//
 public class BMIstore {
     public static void main(String[] args) {
         BMI b1 = new BMI();

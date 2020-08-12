@@ -1,6 +1,5 @@
 
 package com.pcschool.ocp.d01;
-
 //物件參考應用練習
 public class ReferenceTest {
     public static void main(String[] args) {

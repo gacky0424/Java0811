@@ -1,6 +1,6 @@
 
 package com.pcschool.ocp.d01;
-
+//
 public class Cat {
     public String name; //名字
     public static String type; //品種,+static->共用

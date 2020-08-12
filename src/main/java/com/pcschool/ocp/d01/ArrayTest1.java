@@ -1,5 +1,5 @@
 package com.pcschool.ocp.d01;
-
+//
 public class ArrayTest1 {
     public static void main(String[] args) {
         int[] scores = {100, 90, 80, 70};
