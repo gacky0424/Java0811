@@ -1,5 +1,5 @@
 
-package com.pcschool.ocb.test;
+package com.pcschool.ocp.test;
 
 public class Practice1 {
     public static void main(String[] args) {
