@@ -20,7 +20,7 @@ public class School {
             //建立 Student 物件
             Student student = new Student(name, age, bmi);
             //置入資料
-            students[i] = student;
+            students[i] = student;//塞入陣列
         }
         //列印
         for (Student student : students) {
