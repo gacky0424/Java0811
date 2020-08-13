@@ -8,9 +8,11 @@ public class Guess {
         int[] ans =Util.getRandomIntArray(4);
         int[] user = {0, 0, 0, 0};
         //遊戲開始
+        /*A數字位置對
+          B數字對位置不對*/
         while(true){
             Scanner sc = new Scanner(System.in);
-            System.out.println("請猜一部重複四位數:");
+            System.out.println("請猜一個重複四位數:");
             //使用者猜
             String userAns = sc.next();
             // 資料填入 user 陣列

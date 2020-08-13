@@ -1,6 +1,6 @@
 
 package com.pcschool.ocp.d01;
-
+//
 import java.util.Scanner;
 
 public class ATM {

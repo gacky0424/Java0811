@@ -1,6 +1,6 @@
 
 package com.pcschool.ocp.d01;
-
+//
 public class ArrayTest2 {  
     public static void main(String[] args) {
         //股票獲利
