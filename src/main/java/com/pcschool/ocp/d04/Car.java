@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pcschool.ocp.d04;
 
-/**
- *
- * @author gacky
- */
 public class Car {
+    private static String brandName = "Toyota"; // 車商
+    private String typeName = "Altis"; // 車款
     
+    public void printCar() {
+        System.out.println(brandName);
+        System.out.println(typeName);
+    }
+    
+    public static void printCar2() {
+        System.out.println(brandName);
+    }
+    
+    public static void printCar3() {
+        System.out.println(brandName);
+        Car car = new Car();
+        System.out.println(car.typeName);
+    }
 }

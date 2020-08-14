@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pcschool.ocp.d04;
 
-/**
- *
- * @author gacky
- */
 public class Pen {
+    private int price;
+
+    public Pen(int price) {
+        if(price < 10)
+            this.price = 10;
+        else
+            this.price = price;
+    }
+
+    public Pen() {
+        this(5);
+    }
+
+    @Override
+    public String toString() {
+        return "Pen{" + "price=" + price + '}';
+    }
     
 }

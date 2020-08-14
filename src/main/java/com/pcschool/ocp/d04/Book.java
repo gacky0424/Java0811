@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pcschool.ocp.d04;
 
-/**
- *
- * @author gacky
- */
 public class Book {
+    private int pages = 200; // 預設最多頁數
+
+    public Book() {
+        
+    }
+    
+    public Book(int pages) {
+        if(pages > 0 && pages < this.pages){
+            this.pages = pages;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" + "pages=" + pages + '}';
+    }
+    
+    
     
 }

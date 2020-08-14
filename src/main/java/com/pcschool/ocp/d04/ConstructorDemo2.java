@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pcschool.ocp.d04;
 
-/**
- *
- * @author gacky
- */
 public class ConstructorDemo2 {
-    
+    public static void main(String[] args) {
+        Pen p1 = new Pen(20);
+        System.out.println(p1);
+        Pen p2 = new Pen();
+        System.out.println(p2);
+        Pen p3 = new Pen(-6);
+        System.out.println(p3);
+    }
 }
