@@ -11,12 +11,16 @@ public class Drink {
     public Drink() {
         materials = new ArrayList<>(); // ArrayList 動態陣列實體
     }
-    
+
     public Drink addMaterial(Material m) { // 增加原料
         materials.add(m);
         return this;
     }
 
+    public ArrayList<Material> getMaterials() {
+        return materials;
+    }
+    
     public int getPrice() {
         return materials.stream().mapToInt(m -> m.getPrice()).sum();
     }
