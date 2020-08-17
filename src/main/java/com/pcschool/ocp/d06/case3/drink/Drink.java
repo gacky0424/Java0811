@@ -4,16 +4,15 @@ import com.pcschool.ocp.d06.case3.material.Material;
 import java.util.ArrayList;
 
 public class Drink {
- 
-	private ArrayList<Material> materials;//靜態陣列宣告
-	 
-	private int price;
+
+    private ArrayList<Material> materials; // ArrayList 動態陣列宣告
+    private int price;
 
     public Drink() {
-        materials = new ArrayList<>();//ArrayList 動態陣列實體
+        materials = new ArrayList<>(); // ArrayList 動態陣列實體
     }
-	 
-    public Drink addMaterial(Material m){//增加原料 //技法
+    
+    public Drink addMaterial(Material m) { // 增加原料
         materials.add(m);
         return this;
     }
