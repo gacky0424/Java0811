@@ -6,6 +6,7 @@ import com.pcschool.ocp.d06.case2.employee.Manager;
 import com.pcschool.ocp.d06.case2.employee.Operator;
 import com.pcschool.ocp.d06.case2.employee.Sales;
 import com.pcschool.ocp.d06.case2.employee.Supervistor;
+import java.util.Arrays;
 
 public class Company2 {
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class Company2 {
             new Operator(),
             new Operator(),
         };
-        // 資料分析
+        // 資料分析 Java 7
         // 總薪資成本 = ?
         int sum = 0;
         for(Employee emp : employees) {
@@ -36,12 +37,31 @@ public class Company2 {
         //sales總薪資成本 = ?
         sum = 0;
         for(Employee emp : employees) {
-            if(emp instanceof Sales){
+            if(emp instanceof Manager){
                 sum += emp.getSalary().getMoney();
             }
         }
         System.out.printf("sales 總薪資成本: %,d\n", sum);
-        
-                
+        //資料分析 Java 8
+        Arrays.stream(employees)
+                .forEach(e -> System.out.println(e.getSalary().getMoney()));
+        //總薪資成本
+        sum = Arrays.stream(employees)
+                .mapToInt(e -> e.getSalary().getMoney())//map轉換
+                .sum();
+        System.out.printf("sales 總薪資成本: %,d\n", sum);
+        // Sales總新資成本 = ?
+        sum =   Arrays.stream(employees)
+                .filter(e -> e instanceof Sales)//過濾
+                .mapToInt(e -> e.getSalary().getMoney())
+                .sum();
+        System.out.printf("sales 總薪資成本: %,d\n", sum);
+        // Manager總新資成本 = ?
+        sum =   Arrays.stream(employees)
+                .filter(e -> e instanceof Manager)
+                .filter(e -> !(e instanceof Supervistor))            
+                .mapToInt(e -> e.getSalary().getMoney())
+                .sum();
+        System.out.printf("manager 總薪資成本: %,d\n", sum);        
     }
 }
