@@ -36,13 +36,13 @@ public class DrinkStore2 {
         System.out.printf("總共: $%,d\n", sum);
         
         //2.成分中有奶製品(Milk)的共有多少錢?  
-        /*sum = drinks.stream()
-                .filter(d -> d.getMaterials().stream().filter(m -> m instanceof Milk).findAny().isPresent())
-                .mapToInt(d -> d.getPrice()).sum();*/
-        
         sum = drinks.stream()
-                .filter(d -> d instanceof MilkTea || d instanceof Coffee || d instanceof PearlTea || d instanceof Coffee)
+                .filter(d -> d.getMaterials().stream().filter(m -> m instanceof Milk).findAny().isPresent())
                 .mapToInt(d -> d.getPrice()).sum();
+        
+        /*sum = drinks.stream()
+                .filter(d -> d instanceof MilkTea || d instanceof Coffee || d instanceof PearlTea || d instanceof GreenPearlTea )
+                .mapToInt(d -> d.getPrice()).sum();*/
         
         System.out.printf("成分中有奶製品(Milk)的共有 $%,d\n", sum);
         
