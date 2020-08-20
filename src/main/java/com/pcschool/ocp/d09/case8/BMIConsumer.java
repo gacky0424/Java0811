@@ -5,7 +5,6 @@ import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.Function;
-import java.util.function.ObjDoubleConsumer;
 import java.util.function.ObjIntConsumer;
 import java.util.function.UnaryOperator;
 
@@ -33,8 +32,16 @@ public class BMIConsumer {
         System.out.println(f1.apply(0.0));
         System.out.println(uo.apply(0.0));
         System.out.println(du.applyAsDouble(0.0));
-        //----------------------------------------------------------------------
-        //BinaryOperator<Integer> scoreAvg = (chinese, english) -> (chinese + english)/2;
-        //ObjIntConsumer<BinaryOperator<Integer>> oic = (avg, pass) -> System.out.println(avg.apply(pass, pass));
+        //objIntConsumer 用法
+        class Exam{
+            int chinese;
+            int english;
+        }
+        Exam exam = new Exam();
+        exam.chinese = 100;
+        exam.english = 80;
+        
+        ObjIntConsumer<Exam> ois = (e, value) -> {System.out.println((e.chinese + e.english)/2 >= value);};
+        ois.accept(exam, 60);
     }
 }
