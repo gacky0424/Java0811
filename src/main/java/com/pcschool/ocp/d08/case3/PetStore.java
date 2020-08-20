@@ -10,12 +10,12 @@ public class PetStore {
         //狗都吃那些東西 ?
         Arrays.stream(pets)
                 .filter(p -> p instanceof Dog)
-                .forEach(p -> p.eat());
+                .forEach(p -> p.skill());
         System.out.println("-----------------------------------------------");
         //貓都吃那些東西 ?
         Arrays.stream(pets)
                 .filter(p -> p instanceof Cat)
-                .forEach(p -> p.eat());
+                .forEach(p -> p.skill());
     
         //寵物的腿數共有幾隻 ?
         //int amount = pets.length;
