@@ -1,7 +1,7 @@
 package com.pcschool.ocp.d08.case4;
 
 public abstract class Person {
-    private String name;
+    private String name;//private 只能在此類別存取欄位及方法
     private int age;
     private double bmi;
 
@@ -12,16 +12,17 @@ public abstract class Person {
     }
 
     public String getName() {
-        return name;
+        return name;//回傳 name 字串
     }
 
     public int getAge() {
-        return age;
+        return age;//回傳 age
     }
 
     public double getBmi() {
-        return bmi;
+        return bmi;//回傳 BMI
     }
 
+    @Override
     public abstract String toString();
 }
