@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d11;
+package com.pcschool.ocp.d11_group;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
