@@ -22,7 +22,7 @@ public class TestSquare {
     }
     
     @Test
-    public void test2(){//測試三角面積
+    public void test2() { // 測試三角形面積
         int x = 10;
         int h = 2;
         int exp = 10;
