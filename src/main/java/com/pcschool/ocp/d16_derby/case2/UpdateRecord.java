@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 //更新資料
-public class UpdatetRecord {
+public class UpdateRecord {
 
     public static void main(String[] args) throws Exception {
         String jdbcUrl = "jdbc:derby://localhost:1527/Demo"; // 資料庫的位置在哪裡 ?

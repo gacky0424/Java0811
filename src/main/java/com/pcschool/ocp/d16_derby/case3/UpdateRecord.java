@@ -14,7 +14,7 @@ class MyClose implements AutoCloseable{
 
 }
 
-public class UpdatetRecord {
+public class UpdateRecord {
 
     public static void main(String[] args) {
         String jdbcUrl = "jdbc:derby://localhost:1527/Demo"; // 資料庫的位置在哪裡 ?
