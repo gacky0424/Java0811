@@ -1,5 +1,6 @@
 package com.pcschool.ocp.d16_derby.case1;
 
+import com.pcschool.ocp.d16_derby.case2.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
