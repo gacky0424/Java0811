@@ -4,8 +4,8 @@ public class Company {
     public static void main(String[] args) {
         Employee emp1 = new Employee();
         Employee emp2 = new Manager();
-        Employee emp3 = new Boss();//左父又子
-        canBudget(emp3);
+        Employee emp3 = new Boss();
+        canBudget(emp2);
         
     }
     //誰可以編預算?

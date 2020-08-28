@@ -9,6 +9,7 @@ public class Zoo {
         Animal animal3 = new Fish();//類別繼承動物類別,所以可以使用
         animal3.move();
         Animal animal4 = new Penguin();//類別繼承動物類別,所以可以使用
+        animal4.move();
         System.out.println("===================================");
         Bird bird = new Bird();
         bird.move();
