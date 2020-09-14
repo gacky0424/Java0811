@@ -20,5 +20,6 @@ public class ConfirmMain {
         Confirm confirm4 = (n) -> n >= 18 && n < 23;
         
         System.out.println(confirm3.isPass(80));
+        System.out.println(confirm4.isPass(22));
     }
 }

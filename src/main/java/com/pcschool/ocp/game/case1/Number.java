@@ -1,4 +1,3 @@
-
 package com.pcschool.ocp.game.case1;
 
 import java.util.Random;
